@@ -1,40 +1,26 @@
 Wrote python code
 
-```
-import string
+def decode(number):
+    r = number % 37
+    return r
 
-m = open("message")
+def main():
+    f = open("message.txt", "r", encoding="UTF-8")
+    lst = f.read().split()
+    # print(lst[0])
 
-l = m.read()
-print(l)
-l = l.split(" ")
-print(l)
-l.remove(l[-1])
-for i in range(len(l)):
-	l[i] = int(l[i])
-	l[i] = l[i] % 37
-	
-print(l)
+    dec_lst = []
 
-letters = string.ascii_uppercase
+    for i in range(len(lst)):
+        dec_lst.append(decode(int(lst[i])))
 
-d_alpha = {i: letters[i] for i in range(26)}
-d_num = { i+26: i for i in range(10)}
+    print(dec_lst)
 
-for i in range(len(l)):
-	if l[i] == 36:
-		l[i] = "_"
-	elif l[i]<=25 :
-		l[i] = d_alpha[l[i]]
-		l[i] = str(l[i])
-	else :
-		l[i] = d_num[l[i]]
-		l[i] = str(l[i])
-print(l)
-print(''.join(l))
-print(''.join(l), file = open('output.txt', "w"))
+if __name__ == '__main__':
+    main()
 
-```
-![image](https://github.com/CoderZonora/picoCTF/assets/140229408/7f606790-26ad-4b92-b974-d673bbf15ef0)
+Decrypt the file according to the rules
+[17, 26, 20, 13, 3, 36, 13, 36, 17, 26, 20, 13, 3, 36, 1, 32, 1, 28, 31, 31, 29, 27]
+→ [R, 0, U, N, D, _, N, _, R, 0, U, N, D, _, B, 6, B, 2, 5, 5, 3, 1]
 
 Flag: picoCTF{R0UND_N_R0UND_79C18FB3}
