@@ -149,10 +149,25 @@ npm run build
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is developed as part of the Walmart Sparkathon competition. All rights reserved.
 
-## 🙏 Acknowledgments
+## Walmart Sparkathon Alignment
 
-- Unsplash for product images
-- Lucide for beautiful icons
-- Tailwind CSS for the design system
+### Innovation Criteria Met
+
+✅ AI-Powered Optimization: Advanced algorithms for route and emission optimization
+✅ Sustainability Focus: Comprehensive carbon footprint reduction with green carrier matching
+✅ Customer Engagement: Gamified eco-friendly choices with points system
+✅ Community Integration: Local pickup hubs and bulk delivery coordination
+✅ Real-World Impact: Practical implementation for retail logistics
+✅ Scalable Architecture: Modular design for enterprise deployment
+✅ LLM Integration Ready: Route explanation API for AI-enhanced insights
+
+### Business Value
+
+    Cost Reduction: Optimized routes reduce fuel consumption and delivery costs
+    Customer Satisfaction: Faster, more sustainable delivery options with clear explanations
+    Brand Enhancement: Demonstrates commitment to environmental responsibility
+    Operational Efficiency: Streamlined logistics with better resource utilization
+    Data-Driven Insights: Comprehensive analytics for continuous improvement
+
